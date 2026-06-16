@@ -219,7 +219,14 @@
 
                 img.onerror = () => {
                     console.error("Failed to load:", imageUrl);
-                    card.remove();
+                    img.style.display = "none";
+                    const errorMsg = document.createElement("div");
+                    errorMsg.style.padding = "20px";
+                    errorMsg.style.color = "#ef4444";
+                    errorMsg.style.fontSize = "12px";
+                    errorMsg.style.textAlign = "center";
+                    errorMsg.textContent = `Failed to load: ${file}`;
+                    card.appendChild(errorMsg);
                 };
 
                 card.appendChild(img);
