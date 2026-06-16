@@ -1,0 +1,1 @@
+variable "allowed_ip_range" { type = string }
