@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cloud essentials: AWS Practical</title>
+    <title> Terraform Practical</title>
 
     <style>
         * {
@@ -100,7 +100,8 @@
 
 <body>
 
-    <h1>Cloud essentials: AWS Practical</h1>
+    <h1>nfrastructure management with
+        Terraform</h1>
 
     <div id="gallery" class="gallery"></div>
 
@@ -117,12 +118,20 @@
         async function loadImages() {
             // Fallback list of images to use when directory listing is disabled (e.g., when deployed)
             let imageFiles = [
-                "cleanup.sh-01.png",
-                "cleanup.sh-02.png",
-                "infra.sh-01.png",
-                "infra.sh-02.png",
-                "petclinic-ec2-terminated.png",
-                "petclinic-ec2.png"
+                "ami_bcd.png",
+                "asgs.png",
+                "ec2_instances_3.png",
+                "igw.png",
+                "lbs_external.png",
+                "nacls.png",
+                "s3_bucket.png",
+                "sgs.png",
+                "subnets_01_02.png",
+                "target_groups.png",
+                "test-01-114.png",
+                "test-02-54.png",
+                "test-03-235.png",
+                "vpc_747.png"
             ];
 
             // Only try to fetch directory listing if we are running locally (localhost, 127.0.0.1, local network IP, or file://).
